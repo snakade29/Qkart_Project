@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test case suite e-commerce application">
+  <parameter name ="username" value ="testUser" />
+  <parameter name ="password" value ="abc@123" />
+      <groups>
+ <run>
+ <include name ="Sanity" />
+  <include name ="Regression" />
+ </run>
+  </groups>  
+ <test name="Test case execution on Chrome browser">
+ 
+ <parameter name ="Product" value ="YONEX" />
+ <parameter name ="Product1" value ="Roadster" />
+ <parameter name ="FirstProduct"      value ="YONEX Smash Badminton Racquet" />
+ <parameter name ="SecondProduct"      value ="Tan Leatherette Weekender Duffle" />
+ <parameter name ="Address"   value ="Addr line 1 addr Line 2 addr line 3" />
+ <parameter name ="ProductName1"  value ="Xtend Smart Watch"   />
+ <parameter name ="ProductName2"  value ="Yarine Floor Lamp"   />
+ <parameter name ="ProductName"  value ="Stylecon 9 Seater RHS Sofa Set"   />
+ <parameter name ="ProductNames"  value ="Stylecon 9 Seater RHS Sofa Set;Xtend Smart Watch"   />
+ <parameter name ="QTY"  value ="10"   />
+
+ <parameter name ="ContactusUserName"  value ="crio user"   />
+ <parameter name ="ContactUsEmail"  value ="criouser@gmail.com"   />
+ <parameter name ="QueryContent"  value ="Testing the contact us page"   />
+ <parameter name ="ProductNameToSearch"  value ="YONEX Smash Badminton Racquet"  />
+ <parameter name ="AddresstoAdd"  value ="Addr line 1 addr Line 2 addr line 3"   />
+
+  <classes>
+      <class name="QKART_TESTNG.QKART_Tests"> </class>
+    </classes>
+  </test>
+</suite>
+
